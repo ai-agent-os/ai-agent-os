@@ -1,0 +1,17 @@
+# Control Service 配置文件
+
+# 服务器配置
+server:
+  port: 9096          # HTTP 服务器端口（9090-9095 已被占用）
+  log_level: "info"   # 日志级别：debug, info, warn, error
+  debug: false        # 是否调试模式
+
+# NATS 配置
+nats:
+  url: "nats://127.0.0.1:4223"  # NATS 服务器地址
+
+# License 配置
+license:
+  path: "./license.json"                    # License 文件路径
+  encryption_key: "ai-agent-os-license-key-32bytes!!"  # License 加密密钥（必须32字节）
+  publish_interval: 300                      # 发布间隔（秒，默认300秒=5分钟）
