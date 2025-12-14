@@ -13,5 +13,5 @@ nats:
 # License 配置
 license:
   path: "./license.json"                    # License 文件路径
-  encryption_key: "ai-agent-os-license-key-32bytes!!"  # License 加密密钥（必须32字节）
-  publish_interval: 300                      # 发布间隔（秒，默认300秒=5分钟）
+  encryption_key: "ai-agent-os-license-key-32bytes!"  # License 传输加密密钥（32字节，用于AES-256-GCM加密传输）
+  publish_interval: 300                      # 过期检查间隔（秒，默认300秒=5分钟，用于定期检查License是否过期）
