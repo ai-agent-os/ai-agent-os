@@ -6,10 +6,7 @@ server:
   log_level: "info"   # 日志级别：debug, info, warn, error
   debug: false        # 是否调试模式
 
-# NATS 配置（已移至全局配置 global.yaml，此处保留以保持向后兼容，但不再使用）
-# 注意：实际使用的 NATS 配置从 global.yaml 读取
-nats:
-  url: "nats://127.0.0.1:4222"  # NATS 服务器地址
+# 注意：NATS 配置已移至全局配置 global.yaml，不再在此处配置
 
 # License 配置
 license:
