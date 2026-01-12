@@ -13,7 +13,7 @@
 - `control-service.yaml` - 控制服务配置
 
 ### 其他配置
-- `casbin_model.conf` - Casbin 权限模型配置
+- （已移除 Casbin 相关配置，使用自研权限系统）
 
 ## 端口分配
 
